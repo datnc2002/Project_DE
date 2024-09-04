@@ -1,0 +1,61 @@
+[2024-09-04T10:14:56.019+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-09-04T10:14:56.048+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_csv_to_mysql.import_csv_Nhan_vien manual__2024-09-04T10:12:53.468652+00:00 [queued]>
+[2024-09-04T10:14:56.055+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_csv_to_mysql.import_csv_Nhan_vien manual__2024-09-04T10:12:53.468652+00:00 [queued]>
+[2024-09-04T10:14:56.055+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-09-04T10:14:56.067+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): import_csv_Nhan_vien> on 2024-09-04 10:12:53.468652+00:00
+[2024-09-04T10:14:56.073+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=4798) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-04T10:14:56.074+0000] {standard_task_runner.py:64} INFO - Started process 4804 to run task
+[2024-09-04T10:14:56.073+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'import_csv_to_mysql', 'import_csv_Nhan_vien', 'manual__2024-09-04T10:12:53.468652+00:00', '--job-id', '104', '--raw', '--subdir', 'DAGS_FOLDER/import_csv_to_mysql_dag.py', '--cfg-path', '/tmp/tmprlqknosf']
+[2024-09-04T10:14:56.075+0000] {standard_task_runner.py:91} INFO - Job 104: Subtask import_csv_Nhan_vien
+[2024-09-04T10:14:56.088+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-09-04T10:14:56.119+0000] {task_command.py:426} INFO - Running <TaskInstance: import_csv_to_mysql.import_csv_Nhan_vien manual__2024-09-04T10:12:53.468652+00:00 [running]> on host 82f647023843
+[2024-09-04T10:14:56.196+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congdat' AIRFLOW_CTX_DAG_ID='import_csv_to_mysql' AIRFLOW_CTX_TASK_ID='import_csv_Nhan_vien' AIRFLOW_CTX_EXECUTION_DATE='2024-09-04T10:12:53.468652+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-04T10:12:53.468652+00:00'
+[2024-09-04T10:14:56.197+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-09-04T10:14:56.345+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-09-04T10:14:56.357+0000] {import_csv_to_mysql_dag.py:40} INFO - Read 49 rows from /opt/airflow/data/Nhan_vien.csv
+[2024-09-04T10:14:56.358+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-09-04T10:14:56.358+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3791, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 152, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 181, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Ma_nhan_vien'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/import_csv_to_mysql_dag.py", line 47, in import_csv_to_mysql
+    cursor.execute(sql, (row['Ma_nhan_vien'], row['Nhan_vien_ban']))
+                         ~~~^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/series.py", line 1040, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/series.py", line 1156, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3798, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Ma_nhan_vien'
+[2024-09-04T10:14:56.374+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=import_csv_to_mysql, task_id=import_csv_Nhan_vien, run_id=manual__2024-09-04T10:12:53.468652+00:00, execution_date=20240904T101253, start_date=20240904T101456, end_date=20240904T101456
+[2024-09-04T10:14:56.387+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 104 for task import_csv_Nhan_vien ('Ma_nhan_vien'; 4804)
+[2024-09-04T10:14:56.408+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-09-04T10:14:56.420+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

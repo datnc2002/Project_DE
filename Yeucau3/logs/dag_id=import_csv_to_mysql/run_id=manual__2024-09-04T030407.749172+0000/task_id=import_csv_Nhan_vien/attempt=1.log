@@ -1,0 +1,50 @@
+[2024-09-04T04:51:33.220+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-09-04T04:51:33.289+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_csv_to_mysql.import_csv_Nhan_vien manual__2024-09-04T03:04:07.749172+00:00 [queued]>
+[2024-09-04T04:51:33.313+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_csv_to_mysql.import_csv_Nhan_vien manual__2024-09-04T03:04:07.749172+00:00 [queued]>
+[2024-09-04T04:51:33.314+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-09-04T04:51:33.345+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): import_csv_Nhan_vien> on 2024-09-04 03:04:07.749172+00:00
+[2024-09-04T04:51:33.369+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=182) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-04T04:51:33.372+0000] {standard_task_runner.py:64} INFO - Started process 215 to run task
+[2024-09-04T04:51:33.380+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'import_csv_to_mysql', 'import_csv_Nhan_vien', 'manual__2024-09-04T03:04:07.749172+00:00', '--job-id', '66', '--raw', '--subdir', 'DAGS_FOLDER/import_csv_to_mysql_dag.py', '--cfg-path', '/tmp/tmpu15yiprs']
+[2024-09-04T04:51:33.387+0000] {standard_task_runner.py:91} INFO - Job 66: Subtask import_csv_Nhan_vien
+[2024-09-04T04:51:33.427+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-09-04T04:51:33.518+0000] {task_command.py:426} INFO - Running <TaskInstance: import_csv_to_mysql.import_csv_Nhan_vien manual__2024-09-04T03:04:07.749172+00:00 [running]> on host 82afb578cd5f
+[2024-09-04T04:51:35.217+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congdat' AIRFLOW_CTX_DAG_ID='import_csv_to_mysql' AIRFLOW_CTX_TASK_ID='import_csv_Nhan_vien' AIRFLOW_CTX_EXECUTION_DATE='2024-09-04T03:04:07.749172+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-04T03:04:07.749172+00:00'
+[2024-09-04T04:51:35.222+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-09-04T04:51:35.305+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-09-04T04:51:35.339+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/import_csv_to_mysql_dag.py", line 30, in import_csv_to_mysql
+    engine = mysql_hook.get_sqlalchemy_engine()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 245, in get_sqlalchemy_engine
+    return create_engine(self.get_uri(), **engine_kwargs)
+                         ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 216, in get_uri
+    conn = self.get_connection(self.get_conn_id())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/connection.py", line 519, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `mysql_default` isn't defined
+[2024-09-04T04:51:35.352+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=import_csv_to_mysql, task_id=import_csv_Nhan_vien, run_id=manual__2024-09-04T03:04:07.749172+00:00, execution_date=20240904T030407, start_date=20240904T045133, end_date=20240904T045135
+[2024-09-04T04:51:35.401+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 66 for task import_csv_Nhan_vien (The conn_id `mysql_default` isn't defined; 215)
+[2024-09-04T04:51:35.498+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-09-04T04:51:35.530+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

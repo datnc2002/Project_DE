@@ -1,0 +1,39 @@
+[2024-09-03T09:39:14.715+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-09-03T09:39:14.745+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_csv_to_mysql.import_csv_Du_lieu_ban_hang manual__2024-09-03T09:37:38.383526+00:00 [queued]>
+[2024-09-03T09:39:14.755+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_csv_to_mysql.import_csv_Du_lieu_ban_hang manual__2024-09-03T09:37:38.383526+00:00 [queued]>
+[2024-09-03T09:39:14.756+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-09-03T09:39:14.774+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): import_csv_Du_lieu_ban_hang> on 2024-09-03 09:37:38.383526+00:00
+[2024-09-03T09:39:14.785+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=2893) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-03T09:39:14.786+0000] {standard_task_runner.py:64} INFO - Started process 2906 to run task
+[2024-09-03T09:39:14.785+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'import_csv_to_mysql', 'import_csv_Du_lieu_ban_hang', 'manual__2024-09-03T09:37:38.383526+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/import_csv_to_mysql_dag.py', '--cfg-path', '/tmp/tmpf8h5ungj']
+[2024-09-03T09:39:14.787+0000] {standard_task_runner.py:91} INFO - Job 41: Subtask import_csv_Du_lieu_ban_hang
+[2024-09-03T09:39:14.801+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-09-03T09:39:14.836+0000] {task_command.py:426} INFO - Running <TaskInstance: import_csv_to_mysql.import_csv_Du_lieu_ban_hang manual__2024-09-03T09:37:38.383526+00:00 [running]> on host 6f6575553fe4
+[2024-09-03T09:39:15.150+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congdat' AIRFLOW_CTX_DAG_ID='import_csv_to_mysql' AIRFLOW_CTX_TASK_ID='import_csv_Du_lieu_ban_hang' AIRFLOW_CTX_EXECUTION_DATE='2024-09-03T09:37:38.383526+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-03T09:37:38.383526+00:00'
+[2024-09-03T09:39:15.151+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-09-03T09:39:15.159+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-09-03T09:39:15.160+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/import_csv_to_mysql_dag.py", line 72, in import_csv_to_mysql
+    engine = create_engine(f'mysql+pymysql://root:congdat0703@localhost:3306/bai_test', pool)
+                                                                                        ^^^^
+NameError: name 'pool' is not defined. Did you mean: 'bool'?
+[2024-09-03T09:39:15.168+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=import_csv_to_mysql, task_id=import_csv_Du_lieu_ban_hang, run_id=manual__2024-09-03T09:37:38.383526+00:00, execution_date=20240903T093738, start_date=20240903T093914, end_date=20240903T093915
+[2024-09-03T09:39:15.181+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 41 for task import_csv_Du_lieu_ban_hang (name 'pool' is not defined; 2906)
+[2024-09-03T09:39:15.244+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-09-03T09:39:15.272+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

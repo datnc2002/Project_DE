@@ -1,0 +1,146 @@
+[0m20:08:17.208103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97C972D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97F3EBD00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97F3EB7C0>]}
+
+
+============================== 20:08:17.211733 | 3a794bc2-a075-4c9c-b1ba-72c4eabbbda4 ==============================
+[0m20:08:17.211733 [info ] [MainThread]: Running with dbt=1.8.6
+[0m20:08:17.212740 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:08:49.226043 [debug] [MainThread]: Starter project path: D:\Intern\Yeucau4\venv\lib\site-packages\dbt\include\starter_project
+[0m20:08:49.238573 [info ] [MainThread]: 
+Your new dbt project "oms_dbt_proj" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:08:49.239578 [info ] [MainThread]: Setting up your profile.
+[0m20:12:21.234832 [error] [MainThread]: Encountered an error:
+
+[0m20:12:21.246830 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\cli\main.py", line 470, in init
+    results = task.run()
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 117, in generate_target_from_input
+    target = self.generate_target_from_input(
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:12:21.248831 [debug] [MainThread]: Command `dbt init` failed at 20:12:21.248831 after 244.10 seconds
+[0m20:12:21.248831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F97C972D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9001296A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F900129AC0>]}
+[0m20:12:21.249832 [debug] [MainThread]: Flushing usage events
+[0m20:12:27.804325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFECA2FE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFEF4C1CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFEF4C1A00>]}
+
+
+============================== 20:12:27.808752 | 3ec6cf22-cf06-4cf7-8b2e-ee18421a627e ==============================
+[0m20:12:27.808752 [info ] [MainThread]: Running with dbt=1.8.6
+[0m20:12:27.809777 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:13:49.123878 [info ] [MainThread]: A project called oms_dbt_proj already exists here.
+[0m20:13:49.124877 [debug] [MainThread]: Command `dbt init` succeeded at 20:13:49.124877 after 81.38 seconds
+[0m20:13:49.125380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFECA2FE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFEF4C1A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFEF4ABB50>]}
+[0m20:13:49.126386 [debug] [MainThread]: Flushing usage events
+[0m20:14:56.313041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A1151DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A3BAF5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A3BE5AF0>]}
+
+
+============================== 20:14:56.317040 | 28560d75-6f8a-44a1-ba9e-7e3bdeb73dcb ==============================
+[0m20:14:56.317040 [info ] [MainThread]: Running with dbt=1.8.6
+[0m20:14:56.318040 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:15:03.040038 [debug] [MainThread]: Starter project path: D:\Intern\Yeucau4\venv\lib\site-packages\dbt\include\starter_project
+[0m20:15:03.051779 [info ] [MainThread]: 
+Your new dbt project "oms_dbt_proj" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:15:03.052820 [info ] [MainThread]: Setting up your profile.
+[0m20:32:06.437956 [error] [MainThread]: Encountered an error:
+
+[0m20:32:06.439957 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\cli\main.py", line 470, in init
+    results = task.run()
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 117, in generate_target_from_input
+    target = self.generate_target_from_input(
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "D:\Intern\Yeucau4\venv\lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:32:06.441957 [debug] [MainThread]: Command `dbt init` failed at 20:32:06.441957 after 1030.18 seconds
+[0m20:32:06.441957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A1151DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A4901910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1A4901100>]}
+[0m20:32:06.442956 [debug] [MainThread]: Flushing usage events
+[0m20:32:19.184162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002179F4F1D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A1F84BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A1F84910>]}
+
+
+============================== 20:32:19.189164 | cd4d214e-c74e-4aa8-b2a6-93d7854fe089 ==============================
+[0m20:32:19.189164 [info ] [MainThread]: Running with dbt=1.8.6
+[0m20:32:19.190161 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:33:05.211818 [debug] [MainThread]: Starter project path: D:\Intern\Yeucau4\venv\lib\site-packages\dbt\include\starter_project
+[0m20:33:05.222818 [info ] [MainThread]: 
+Your new dbt project "my_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:33:05.223819 [info ] [MainThread]: Setting up your profile.
+[0m20:45:42.408308 [info ] [MainThread]: Profile my_project written to C:\Users\admin\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:45:42.410308 [debug] [MainThread]: Command `dbt init` succeeded at 20:45:42.410308 after 803.28 seconds
+[0m20:45:42.410308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002179F4F1D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A1F84BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A1F7DC10>]}
+[0m20:45:42.411308 [debug] [MainThread]: Flushing usage events
