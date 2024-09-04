@@ -670,3 +670,150 @@
 [2024-09-04T16:40:02.475+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:02.474+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-09-04T16:40:02.496+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:02.496+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
 [2024-09-04T16:40:02.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.098 seconds
+[2024-09-04T16:40:12.617+0000] {processor.py:161} INFO - Started process (PID=15865) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:12.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:40:12.618+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:12.618+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:12.631+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:12.657+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:12.657+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:40:12.676+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:12.676+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:40:12.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.087 seconds
+[2024-09-04T16:40:22.798+0000] {processor.py:161} INFO - Started process (PID=15876) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:22.798+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:40:22.799+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:22.799+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:22.812+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:22.838+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:22.838+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:40:22.856+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:22.856+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:40:22.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.083 seconds
+[2024-09-04T16:40:32.966+0000] {processor.py:161} INFO - Started process (PID=15887) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:32.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:40:32.967+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:32.967+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:32.981+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:33.006+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:33.006+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:40:33.025+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:33.025+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:40:33.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.086 seconds
+[2024-09-04T16:40:43.141+0000] {processor.py:161} INFO - Started process (PID=15898) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:43.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:40:43.143+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:43.142+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:43.156+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:43.182+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:43.182+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:40:43.201+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:43.201+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:40:43.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.086 seconds
+[2024-09-04T16:40:53.313+0000] {processor.py:161} INFO - Started process (PID=15909) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:53.314+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:40:53.315+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:53.314+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:53.328+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:40:53.354+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:53.353+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:40:53.372+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:40:53.372+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:40:53.392+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.083 seconds
+[2024-09-04T16:41:03.486+0000] {processor.py:161} INFO - Started process (PID=15920) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:03.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:41:03.487+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:03.487+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:03.500+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:03.526+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:03.526+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:41:03.546+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:03.546+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:41:03.572+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.090 seconds
+[2024-09-04T16:41:13.660+0000] {processor.py:161} INFO - Started process (PID=15931) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:13.661+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:41:13.662+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:13.662+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:13.676+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:13.701+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:13.701+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:41:13.720+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:13.719+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:41:13.740+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.084 seconds
+[2024-09-04T16:41:23.825+0000] {processor.py:161} INFO - Started process (PID=15942) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:23.825+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:41:23.826+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:23.826+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:23.839+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:23.865+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:23.865+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:41:23.884+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:23.884+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:41:23.904+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.084 seconds
+[2024-09-04T16:41:33.986+0000] {processor.py:161} INFO - Started process (PID=15953) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:33.987+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:41:33.988+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:33.988+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:34.002+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:34.029+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:34.029+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:41:34.048+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:34.048+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:41:34.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.091 seconds
+[2024-09-04T16:41:44.160+0000] {processor.py:161} INFO - Started process (PID=15962) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:44.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:41:44.161+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:44.161+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:44.178+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:44.212+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:44.212+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:41:44.233+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:44.232+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:41:44.257+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.102 seconds
+[2024-09-04T16:41:54.353+0000] {processor.py:161} INFO - Started process (PID=15969) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:54.353+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:41:54.354+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:54.354+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:54.367+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:41:54.394+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:54.394+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:41:54.413+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:41:54.413+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:41:54.435+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.087 seconds
+[2024-09-04T16:42:04.541+0000] {processor.py:161} INFO - Started process (PID=15980) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:04.542+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:42:04.543+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:04.542+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:04.556+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:04.583+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:04.583+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:42:04.601+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:04.601+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:42:04.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.084 seconds
+[2024-09-04T16:42:14.722+0000] {processor.py:161} INFO - Started process (PID=15991) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:14.724+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:42:14.725+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:14.724+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:14.748+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:14.787+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:14.787+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:42:14.816+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:14.815+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:42:14.852+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.136 seconds
+[2024-09-04T16:42:25.173+0000] {processor.py:161} INFO - Started process (PID=16002) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:25.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:42:25.178+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:25.178+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:25.203+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:25.258+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:25.258+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:42:25.299+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:25.299+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:42:25.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.190 seconds
+[2024-09-04T16:42:35.462+0000] {processor.py:161} INFO - Started process (PID=16013) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:35.462+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:42:35.463+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:35.463+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:35.476+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:35.502+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:35.502+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:42:35.520+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:35.520+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:42:35.540+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.082 seconds
+[2024-09-04T16:42:45.637+0000] {processor.py:161} INFO - Started process (PID=16024) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:45.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:42:45.639+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:45.638+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:45.653+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:45.680+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:45.680+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:42:45.701+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:45.701+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:42:45.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.094 seconds
+[2024-09-04T16:42:55.819+0000] {processor.py:161} INFO - Started process (PID=16035) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:55.820+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:42:55.821+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:55.820+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:55.835+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:42:55.862+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:55.862+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:42:55.881+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:42:55.881+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:42:55.904+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.089 seconds
+[2024-09-04T16:43:06.000+0000] {processor.py:161} INFO - Started process (PID=16046) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:06.001+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:43:06.001+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:06.001+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:06.019+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:06.052+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:06.051+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:43:06.072+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:06.072+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:43:06.093+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.099 seconds
+[2024-09-04T16:43:16.181+0000] {processor.py:161} INFO - Started process (PID=16057) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:16.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:43:16.183+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:16.182+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:16.196+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:16.223+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:16.222+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:43:16.244+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:16.243+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:43:16.265+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.088 seconds
+[2024-09-04T16:43:26.357+0000] {processor.py:161} INFO - Started process (PID=16068) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:26.358+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:43:26.358+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:26.358+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:26.373+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:26.401+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:26.401+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:43:26.422+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:26.421+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:43:26.444+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.091 seconds
+[2024-09-04T16:43:36.531+0000] {processor.py:161} INFO - Started process (PID=16079) to work on /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:36.532+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/query_task.py for tasks to queue
+[2024-09-04T16:43:36.533+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:36.532+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:36.546+0000] {processor.py:840} INFO - DAG(s) 'query_statement' retrieved from /opt/airflow/dags/query_task.py
+[2024-09-04T16:43:36.572+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:36.571+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-09-04T16:43:36.589+0000] {logging_mixin.py:188} INFO - [2024-09-04T16:43:36.589+0000] {dag.py:3947} INFO - Setting next_dagrun for query_statement to 2024-09-04 00:00:00+00:00, run_after=2024-09-05 00:00:00+00:00
+[2024-09-04T16:43:36.609+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/query_task.py took 0.082 seconds
